@@ -1,0 +1,14 @@
+[package]
+name = "trevor/gambit"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Loader = "sleitnick/loader@2.0.0"
+Net = "sleitnick/net@0.1.0"
+Input = "sleitnick/input@2.1.1"
+Promise = "evaera/promise@4.0.0"
+
+[server-dependencies]
+ProfileService = "nidoxs/profileservice@1.0.0"

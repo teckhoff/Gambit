@@ -1,0 +1,11 @@
+# Project place files
+*.rbxlx
+*.rbxl
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# External dependencies managed by Wally
+Packages
+ServerPackages
