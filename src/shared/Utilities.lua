@@ -1,3 +1,8 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TileLibrary = require(ReplicatedStorage.Shared.Libraries.TileLibrary)
+--local Map = require(ReplicatedStorage.Shared.Objects.Map) :: any
+--local MapNode = require(ReplicatedStorage.Shared.Objects.MapNode)
+
 --[=[
     @class Utilities
 
@@ -21,5 +26,25 @@ function Utilities.CompileUpdatedTable(Source: { any }, Update: { any })
 		end
 	end
 end
+--[[
+--[=[
+	Generates a map of the given width and height.
+
+	@param Width number -- The number of columns (the width) of the array.
+	@param Height number -- The number of rows (the height) needed in the array.
+	@return CustomTypes.Map -- The generated map.
+]=]
+function Utilities.CreateMap(Width: number, Height: number): MapNode.MapNode
+	local NewMap = Map.new(Width, Height)
+
+	for i = 1, Width, 1 do
+		Map.Map[i] = {}
+		for j = 1, Height, 1 do
+			Map.Map[i][j] = MapNode.new(TileLibrary.Grass, i, j)
+		end
+	end
+
+	return Map
+end]]
 
 return Utilities
