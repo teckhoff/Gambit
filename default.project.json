@@ -10,6 +10,10 @@
       "Packages":
       {
         "$path": "Packages"
+      },
+      "Models":
+      {
+        "$path": "Models"
       }
     },
 

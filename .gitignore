@@ -9,3 +9,6 @@
 # External dependencies managed by Wally
 Packages
 ServerPackages
+
+# Models and other objects that do not go into Github repositories.
+Models
